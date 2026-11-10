@@ -1,0 +1,133 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unifique — Conexão em outro nível</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04070f;--ink:#f2f5fb;--mut:#8a94a8;--line:rgba(255,255,255,.09);--blue:#2f6bff;--cy:#5ad1ff;--y:#ffd23f}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Inter Tight",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.05;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.w{max-width:1320px;margin:auto;padding:0 24px}
+.serif{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:32px;padding:10px 10px 10px 24px;border:1px solid var(--line);border-radius:999px;background:rgba(10,14,26,.6);backdrop-filter:blur(20px);font-size:14px;width:max-content;max-width:calc(100% - 32px)}
+.logo{font-weight:600;font-size:18px;letter-spacing:-.4px}.logo i{color:var(--cy);font-style:normal}
+nav .l{display:flex;gap:26px;color:var(--mut)}nav .l a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:var(--ink);color:#05070d;font-weight:500;font-size:14px;transition:.3s}
+.btn:hover{transform:scale(1.04)}.btn.b{background:var(--blue);color:#fff}.btn.o{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.hero{position:relative;height:100vh;min-height:720px;overflow:hidden}
+.hero .bg{position:absolute;inset:-5%;background:url(img/5997177231.jpg) center/cover;will-change:transform}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,7,15,.2) 0%,rgba(4,7,15,.1) 50%,var(--bg) 100%),linear-gradient(90deg,rgba(4,7,15,.85),transparent 60%)}
+.hero .c{position:absolute;z-index:2;left:0;right:0;bottom:9vh}
+.eyebrow{display:inline-flex;gap:10px;align-items:center;font-size:13px;color:var(--mut);letter-spacing:.08em;text-transform:uppercase}.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cy);box-shadow:0 0 16px var(--cy)}
+h1{font-size:clamp(52px,9.5vw,160px);line-height:.9;letter-spacing:-.05em;font-weight:500;margin:24px 0 36px}
+h1 .serif{color:var(--cy);letter-spacing:-.02em}
+.hrow{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}.hrow p{max-width:380px;color:#c4cbd8;font-size:17px;line-height:1.5}
+.marq{border-block:1px solid var(--line);overflow:hidden;padding:26px 0;white-space:nowrap}
+.marq div{display:inline-block;animation:m 30s linear infinite;font-size:clamp(28px,4vw,56px);letter-spacing:-.03em;color:var(--mut)}
+.marq span{margin:0 28px}.marq .serif{color:var(--ink)}@keyframes m{to{transform:translateX(-50%)}}
+section{padding:140px 0}h2{font-size:clamp(40px,6vw,96px);line-height:.95;letter-spacing:-.045em;font-weight:500}
+.lbl{font-size:13px;color:var(--mut);letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;display:block}
+.intro{display:grid;grid-template-columns:1fr 1.4fr;gap:80px}.intro p{font-size:clamp(22px,2.4vw,34px);line-height:1.25;letter-spacing:-.02em;color:var(--mut)}.intro p b{color:var(--ink);font-weight:400}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:100px}
+.stats div{padding:36px 24px 0 0}.stats b{display:block;font-size:clamp(40px,5vw,72px);font-weight:400;letter-spacing:-.04em}.stats span{color:var(--mut);font-size:14px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:72px}
+.p{position:relative;padding:40px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.04),transparent);overflow:hidden;transition:.4s}
+.p:hover{border-color:rgba(90,209,255,.4);transform:translateY(-8px)}
+.p.f{background:radial-gradient(120% 80% at 50% 0%,rgba(47,107,255,.55),rgba(47,107,255,.05) 70%);border-color:rgba(47,107,255,.6)}
+.p .t{display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}.p .t em{font-style:normal;background:var(--y);color:#111;padding:4px 10px;border-radius:999px;font-weight:600}
+.p .sp{font-size:96px;letter-spacing:-.06em;line-height:1;margin:40px 0 4px}.p .sp small{font-size:28px;letter-spacing:-.02em;color:var(--mut)}
+.p ul{list-style:none;margin:32px 0;border-top:1px solid var(--line)}.p li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:#c4cbd8}
+.p .pr{display:flex;justify-content:space-between;align-items:center}.p .pr b{font-size:28px;font-weight:500}.p .pr b small{font-size:14px;color:var(--mut);font-weight:400}
+.cards{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:72px}
+.cd{position:relative;border-radius:28px;overflow:hidden;min-height:620px;display:flex;align-items:end;padding:40px}
+.cd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:1.2s cubic-bezier(.2,.7,.2,1)}.cd:hover img{transform:scale(1.06)}
+.cd:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,7,15,.9))}.cd>div{position:relative;z-index:1}
+.cd h3{font-size:44px;font-weight:500;letter-spacing:-.03em;line-height:1}.cd p{color:#c4cbd8;margin:12px 0 22px;max-width:360px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);margin-top:72px;border-top:1px solid var(--line)}
+.s{padding:40px 28px 40px 0;border-right:1px solid var(--line)}.s:last-child{border:0}.s .n{color:var(--mut);font-size:13px}.s h4{font-size:28px;font-weight:500;letter-spacing:-.03em;margin:60px 0 10px}.s p{color:var(--mut);font-size:15px;line-height:1.5}
+.cta{position:relative;border-radius:36px;overflow:hidden;padding:140px 48px;text-align:center}
+.cta .bg{position:absolute;inset:0;background:url(img/5997186819.jpg) center/cover}.cta>*{position:relative}
+.cta h2{margin-bottom:40px}.cep{display:inline-flex;gap:6px;padding:6px;border-radius:999px;background:rgba(255,255,255,.1);backdrop-filter:blur(20px);border:1px solid var(--line);max-width:100%}
+.cep input{background:none;border:0;color:#fff;font:inherit;font-size:16px;padding:0 20px;outline:0;width:220px;min-width:0}.cep input::placeholder{color:#aab}
+footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing:-.07em;line-height:.8;font-weight:500;background:linear-gradient(180deg,var(--ink),rgba(255,255,255,.05));-webkit-background-clip:text;color:transparent}
+.fr{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;color:var(--mut);font-size:14px;margin-top:60px;padding-top:28px;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(40px);filter:blur(8px);transition:1.1s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none;filter:none}
+@media(max-width:900px){nav .l{display:none}.intro,.cards,.plans{grid-template-columns:1fr}.stats,.svc{grid-template-columns:1fr 1fr}.s{border:0}.cd{min-height:460px}section{padding:90px 0}.cta{padding:80px 20px}}
+
+.mob{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-top:72px}
+.box{border:1px solid var(--line);border-radius:28px;padding:44px;background:linear-gradient(180deg,rgba(255,255,255,.04),transparent)}
+.box.bl{background:radial-gradient(100% 90% at 0% 0%,rgba(47,107,255,.5),rgba(4,7,15,0) 70%)}
+.box h3{font-size:clamp(32px,3.6vw,52px);font-weight:500;letter-spacing:-.04em;line-height:1}.box p{color:#c4cbd8;margin:16px 0 28px;max-width:440px;line-height:1.5}
+.price{font-size:clamp(90px,10vw,150px);letter-spacing:-.07em;line-height:.9}.price sup{font-size:.3em;letter-spacing:0;vertical-align:top}.price small{font-size:.16em;letter-spacing:0;color:var(--mut)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:10px 16px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:#c4cbd8}.chip:hover{border-color:var(--cy);color:#fff}
+.promo{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:72px}
+.pc{position:relative;border-radius:28px;padding:40px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);overflow:hidden;transition:.4s}
+.pc:hover{transform:translateY(-6px);border-color:rgba(90,209,255,.4)}.pc .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cy)}
+.pc h3{font-size:clamp(30px,3vw,44px);font-weight:500;letter-spacing:-.035em;line-height:1;margin:18px 0 12px}.pc p{color:#c4cbd8;max-width:420px;line-height:1.5}
+.pc .arr{align-self:flex-start;margin-top:28px}.g1{background:radial-gradient(90% 90% at 100% 0%,rgba(255,210,63,.28),transparent 60%)}.g2{background:radial-gradient(90% 90% at 100% 100%,rgba(47,107,255,.45),transparent 60%)}.g3{background:radial-gradient(90% 90% at 0% 100%,rgba(255,120,60,.3),transparent 60%)}.g4{background:radial-gradient(90% 90% at 0% 0%,rgba(90,209,255,.3),transparent 60%)}
+.self{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:72px}
+.sc{border:1px solid var(--line);border-radius:24px;padding:32px;transition:.3s;display:block}.sc:hover{background:rgba(255,255,255,.04);border-color:rgba(90,209,255,.4)}
+.sc .ic{width:48px;height:48px;border-radius:14px;background:rgba(47,107,255,.2);display:grid;place-items:center;font-size:22px;margin-bottom:56px}.sc h4{font-size:22px;font-weight:500;letter-spacing:-.02em}.sc p{color:var(--mut);font-size:14px;margin-top:8px}
+.help{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:28px;overflow:hidden;margin-top:72px}
+.hl{background:var(--bg);padding:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:.3s}.hl:hover{background:#0a1224}.hl h4{font-size:clamp(24px,2.4vw,34px);font-weight:500;letter-spacing:-.03em}.hl p{color:var(--mut);font-size:14px;margin-top:6px}.hl .go{width:56px;height:56px;flex:none;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:20px;transition:.3s}.hl:hover .go{background:var(--cy);color:#04070f;transform:rotate(-45deg)}
+.fcols{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;margin-bottom:80px}.fcols b{display:block;font-weight:500;margin-bottom:16px;font-size:14px}.fcols a{display:block;color:var(--mut);font-size:14px;padding:5px 0}.fcols a:hover{color:var(--ink)}
+@media(max-width:900px){.mob,.promo,.help{grid-template-columns:1fr}.self{grid-template-columns:1fr 1fr}.fcols{grid-template-columns:1fr 1fr}.box,.pc,.hl{padding:28px}}
+.pc.ph{background-size:cover;background-position:center}.pc.ph:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,7,15,.92) 30%,rgba(4,7,15,.2))}.pc>*{position:relative}
+</style></head><body>
+<nav><a class="logo" href="#">unifique<i>.</i></a><div class="l"><a href="#planos">Internet</a><a href="#movel">Móvel</a><a href="#promocoes">Promoções</a><a href="#cliente">Sou cliente</a><a href="#empresas">Empresas</a></div><a class="btn b" href="#cep">Assine agora</a></nav>
+<header class="hero"><div class="bg" id="pbg"></div><div class="c w">
+<span class="eyebrow">Fibra óptica · Santa Catarina</span>
+<h1 class="rv">Mais velocidade.<br><span class="serif">Zero</span> complicação.</h1>
+<div class="hrow rv"><p>Navegue, jogue e assista aos seus conteúdos favoritos com uma internet feita para acompanhar o seu ritmo.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#planos">Ver planos →</a><a class="btn o" href="#cep">Consultar CEP</a></div></div></div></header>
+<div class="marq"><div><span>Internet 1 Giga</span><span class="serif">Wi‑Fi 6 Mesh</span><span>Unifique Móvel 5G</span><span class="serif">TV & Streaming</span><span>Empresas</span><span class="serif">Suporte 24h</span><span>Internet 1 Giga</span><span class="serif">Wi‑Fi 6 Mesh</span><span>Unifique Móvel 5G</span><span class="serif">TV & Streaming</span><span>Empresas</span><span class="serif">Suporte 24h</span></div></div>
+<section><div class="w"><div class="intro"><span class="lbl rv">(01) — Sobre</span><p class="rv"><b>Há mais de duas décadas conectando Santa Catarina.</b> Construímos nossa própria rede de fibra para entregar uma experiência que <b>simplesmente funciona</b>, com gente de verdade do outro lado.</p></div>
+<div class="stats"><div class="rv"><b>25+</b><span>anos de história</span></div><div class="rv"><b>2 Gbps</b><span>velocidade máxima</span></div><div class="rv"><b>99,9%</b><span>disponibilidade da rede</span></div><div class="rv"><b>24/7</b><span>atendimento humano</span></div></div></div></section>
+<section id="movel" style="padding-top:0"><div class="w"><span class="lbl rv">(02) — Telefonia móvel</span><h2 class="rv">Pega na sua cidade.<br><span class="serif">Pega em todo</span> Brasil.</h2>
+<div class="mob"><div class="box bl rv"><span class="lbl">Plano de celular · a partir de</span><div class="price"><sup>R$</sup>39<sup>,90</sup><small> /mês</small></div><p>Contrate agora seu plano de celular com cobertura nacional. Tenha mais liberdade e mais conexão, com 5G e GB que acumulam.</p><div class="chips"><a class="chip" href="#cep">Celular + Fibra + TV</a><a class="chip" href="#cep">Celular + Fibra</a><a class="chip" href="#cep">Plano de Celular</a></div></div>
+<div class="box rv"><span class="lbl">Mais procurados</span><div style="display:grid;gap:1px;background:var(--line);border-radius:18px;overflow:hidden">
+<a class="hl" style="padding:22px" href="#planos"><div><h4 style="font-size:22px">Internet Fibra</h4><p>Para a sua casa</p></div><span class="go">→</span></a>
+<a class="hl" style="padding:22px" href="#movel"><div><h4 style="font-size:22px">Planos de Celular</h4><p>Para você e sua família</p></div><span class="go">→</span></a>
+<a class="hl" style="padding:22px" href="#cep"><div><h4 style="font-size:22px">Unifique Tudo</h4><p>Celular + Internet Fibra</p></div><span class="go">→</span></a>
+<a class="hl" style="padding:22px" href="#servicos"><div><h4 style="font-size:22px">Unifique Mais</h4><p>Conheça mais serviços</p></div><span class="go">→</span></a></div></div></div></div></section>
+<section id="planos" style="padding-top:0"><div class="w"><span class="lbl rv">(03) — Internet Fibra</span><h2 class="rv">Escolha a sua <span class="serif">velocidade.</span></h2>
+<div class="plans">
+<div class="p rv"><div class="t"><span>Essencial</span></div><div class="sp">500<small> Mega</small></div><ul><li>Wi‑Fi 6 incluso</li><li>Instalação grátis</li><li>App Unifique</li></ul><div class="pr"><b>R$ 99,90<small>/mês</small></b><a class="btn o" href="#cep">Assinar</a></div></div>
+<div class="p f rv"><div class="t"><span>Ultra</span><em>Mais escolhido</em></div><div class="sp">1<small> Giga</small></div><ul><li>Wi‑Fi 6 Mesh</li><li>Streaming incluso</li><li>Suporte prioritário</li></ul><div class="pr"><b>R$ 129,90<small>/mês</small></b><a class="btn" href="#cep">Assinar</a></div></div>
+<div class="p rv"><div class="t"><span>Infinity</span></div><div class="sp">2<small> Giga</small></div><ul><li>2 pontos Mesh</li><li>Baixa latência para games</li><li>IP fixo opcional</li></ul><div class="pr"><b>R$ 199,90<small>/mês</small></b><a class="btn o" href="#cep">Assinar</a></div></div>
+</div><p style="color:var(--mut);font-size:12px;margin-top:20px">*Valores ilustrativos.</p></div></section>
+<section id="empresas" style="padding-top:0"><div class="w"><span class="lbl rv">(04) — Para quem</span><h2 class="rv">Feita para <span class="serif">cada</span> momento.</h2>
+<div class="cards"><a class="cd rv" href="#planos"><img src="img/5997178536.jpg" alt="Gamer"><div><h3>Casa & Games</h3><p>Latência baixa, streaming em 4K e Wi‑Fi em todos os cômodos.</p><span class="btn">Ver planos →</span></div></a>
+<a class="cd rv" href="#cep"><img src="img/5997181472.jpg" alt="Empresas"><div><h3>Empresas</h3><p>Link dedicado, data center, cloud e segurança para quem não pode parar.</p><span class="btn">Falar com especialista →</span></div></a></div></div></section>
+<section id="servicos" style="padding-top:0"><div class="w"><span class="lbl rv">(05) — Serviços</span><h2 class="rv">Tudo em <span class="serif">um só</span> lugar.</h2>
+<div class="svc"><div class="s rv"><span class="n">01</span><h4>Internet Fibra</h4><p>Até 2 Giga com estabilidade de ponta a ponta.</p></div><div class="s rv"><span class="n">02</span><h4>Móvel 5G</h4><p>Planos flexíveis com GB que acumulam.</p></div><div class="s rv"><span class="n">03</span><h4>TV & Streaming</h4><p>Canais ao vivo e seus apps favoritos.</p></div><div class="s rv"><span class="n">04</span><h4>Telefonia</h4><p>Ligações ilimitadas para todo o Brasil.</p></div></div></div></section>
+<section id="promocoes" style="padding-top:0"><div class="w"><span class="lbl rv">(06) — Acontece na Unifique</span><h2 class="rv">Promoções & <span class="serif">vantagens.</span></h2>
+<div class="promo">
+<a class="pc ph rv" href="#" style="background-image:url(img/comitiva.jpg)"><div><span class="k">Promoção</span><h3>Comitiva Unifique</h3><p>Concorra a uma viagem com acompanhante para a Oktoberfest de Munique 2027.</p></div><span class="btn arr" style="background:var(--y)">Eu quero →</span></a>
+<a class="pc ph rv" href="#" style="background-image:url(img/conexao.jpg)"><div><span class="k">Cliente Unifique</span><h3>Conexão Garantida</h3><p>Tudo pode acontecer, menos você ficar sem internet. A internet fixa caiu? Use a do celular sem pagar.</p></div><span class="btn arr">Eu quero agora →</span></a>
+<a class="pc ph rv" href="#" style="background-image:url(img/verao.jpg)"><div><span class="k">Venha viver</span><h3>Ahh Verão</h3><p>É o verão do jeito que a gente gosta: com muita música, praia e festa. Uma temporada inteira de experiências, shows e encontros.</p></div><span class="btn arr">Vem pro Ahh Verão →</span></a>
+<a class="pc ph rv" href="#" style="background-image:url(img/indique.jpg)"><div><span class="k">Já é cliente? · Tempo limitado</span><h3>Indique e ganhe mensalidades grátis</h3><p>Indique a Unifique para amigos e família e ganhe mensalidades sem pagar nada.</p></div><span class="btn arr">Saiba como indicar →</span></a>
+</div>
+<div class="box rv" style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px"><div><span class="k" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cy)">Mapa de cobertura</span><h3 style="margin-top:12px">Cobertura Rede Móvel</h3><p style="margin-bottom:0">Veja a cobertura da nossa rede móvel e descubra onde você já pode contar com o 5G da Unifique.</p></div><a class="btn b" href="#">Ver mapa de cobertura →</a></div></div></section>
+<section id="cliente" style="padding-top:0"><div class="w"><span class="lbl rv">(07) — Para clientes</span><h2 class="rv">Resolva de maneira <span class="serif">fácil e rápida.</span></h2>
+<div class="self">
+<a class="sc rv" href="#"><div class="ic">🧾</div><h4>Minha fatura</h4><p>Mais facilidade para acessar a sua fatura.</p></a>
+<a class="sc rv" href="#"><div class="ic">📱</div><h4>App Minha Unifique</h4><p>Baixe agora mesmo.</p></a>
+<a class="sc rv" href="#"><div class="ic">👤</div><h4>Área do cliente</h4><p>Resolva o que precisa de forma rápida.</p></a>
+<a class="sc rv" href="#"><div class="ic">💬</div><h4>Tirar dúvidas</h4><p>Confira as perguntas mais frequentes.</p></a></div></div></section>
+<section id="ajuda" style="padding-top:0"><div class="w"><span class="lbl rv">(08) — Vem pra Unifique</span><h2 class="rv">Precisa de ajuda<br>para <span class="serif">contratar?</span></h2><p class="rv" style="color:var(--mut);max-width:520px;margin-top:20px;font-size:17px">Tenha acesso à internet de alta velocidade em casa e onde quer que esteja, com a cobertura do seu plano de celular.</p>
+<div class="help rv">
+<a class="hl" href="#"><div><h4>Fale no WhatsApp</h4><p>Envie seus dados e inicie a conversa</p></div><span class="go">→</span></a>
+<a class="hl" href="#"><div><h4>Via Telegram</h4><p>Converse conosco e resolva tudo no aplicativo</p></div><span class="go">→</span></a>
+<a class="hl" href="#"><div><h4>Ligar agora</h4><p>Assine com um de nossos especialistas</p></div><span class="go">→</span></a>
+<a class="hl" href="#"><div><h4>Encontrar loja</h4><p>Visite a loja Unifique mais perto de você</p></div><span class="go">→</span></a></div></div></section>
+<section id="cep" style="padding-top:0"><div class="w"><div class="cta rv"><div class="bg"></div><span class="lbl">Estamos aqui para ajudar você</span><h2>Pronto para<br><span class="serif">acelerar?</span></h2><p style="color:#c4cbd8;margin:-16px auto 32px;max-width:440px">Consulte a disponibilidade no seu endereço ou encontre a loja Unifique mais próxima.</p>
+<form class="cep" onsubmit="event.preventDefault();this.querySelector('button').textContent='Disponível ✓'"><input placeholder="Digite seu CEP" aria-label="CEP"><button class="btn" style="border:0;cursor:pointer;background:var(--y)">Consultar</button></form></div></div></section>
+<footer><div class="w"><div class="fcols">
+<div><b>Para você</b><a href="#">Internet Fibra</a><a href="#">Planos de Celular</a><a href="#">Combos</a><a href="#">Unifique Mais</a></div>
+<div><b>Para empresas</b><a href="#">Planos Celular + Fibra</a><a href="#">Planos de Celular</a><a href="#">Internet Fibra</a><a href="#">Internet Dedicada</a></div>
+<div><b>Serviços Telco</b><a href="#">Operadoras</a><a href="#">MVNO</a></div>
+<div><b>Sobre a Unifique</b><a href="#">A Unifique</a><a href="#">Blog</a><a href="#">Trabalhe conosco</a><a href="#">Relações com Investidores</a></div>
+<div><b>Atendimento</b><a href="#">Falar por WhatsApp</a><a href="#">Ligar para nós</a><a href="#">Aplicativo Minha Unifique</a><a href="#">Chame no Telegram</a></div></div><div class="fbig">unifique</div><div class="fr"><span>Imprensa · Seja nosso parceiro · Regulatório · Contratos · Privacidade · Governança · Acessibilidade</span><span>Instagram · LinkedIn · YouTube</span><span>© 2026 — Conceito de redesign</span></div></div></footer>
+<script>
+const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.12});document.querySelectorAll('.rv').forEach((e,i)=>{e.style.transitionDelay=(i%4)*80+'ms';o.observe(e)});
+const b=document.getElementById('pbg');addEventListener('scroll',()=>{b.style.transform=`translateY(${scrollY*.3}px) scale(1.05)`},{passive:true});
+</script></body></html>
