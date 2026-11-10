@@ -72,6 +72,15 @@ footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing
 .fcols{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;margin-bottom:80px}.fcols b{display:block;font-weight:500;margin-bottom:16px;font-size:14px}.fcols a{display:block;color:var(--mut);font-size:14px;padding:5px 0}.fcols a:hover{color:var(--ink)}
 @media(max-width:900px){.mob,.promo,.help{grid-template-columns:1fr}.self{grid-template-columns:1fr 1fr}.fcols{grid-template-columns:1fr 1fr}.box,.pc,.hl{padding:28px}}
 .pc.ph{background-size:cover;background-position:center}.pc.ph{min-height:440px;justify-content:flex-end;padding:28px}.pc.ph:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,7,15,.9) 0%,rgba(4,7,15,.55) 22%,rgba(4,7,15,0) 42%)}.pc.ph h3{font-size:clamp(22px,2vw,28px);margin:8px 0 6px}.pc.ph p{font-size:14px;max-width:380px;margin:0}.pc.ph .k{font-size:11px}.pc.ph .arr{margin-top:14px;padding:10px 18px;font-size:14px}.pc>*{position:relative}
+
+.lt,.lb{--ink:#071226;--mut:#4d5b75;--line:rgba(7,18,38,.12);color:var(--ink);padding:110px 0!important}
+.lt{background:#fff}.lb{background:#e3f1ff}
+.lt .btn,.lb .btn{color:#fff}.lt .btn.o,.lb .btn.o{color:var(--ink)}
+.lt p,.lt li,.lb p,.lb li{color:var(--mut)!important}
+.lt .p,.lb .p,.lt .box,.lb .box{background:#fff;box-shadow:0 20px 50px -30px rgba(7,18,38,.25)}
+.lb .p,.lb .box{background:#fff}.lt .p,.lt .box{background:#f3f8ff}
+.lt .lbl,.lb .lbl,.lt .k,.lb .k{color:var(--blue)!important}
+.lt .cd p,.lb .cd p{color:#c4cbd8!important}.lt .cd,.lb .cd{color:#f2f5fb}
 </style></head><body>
 <nav><a class="logo" href="#">unifique<i>.</i></a><div class="l"><a href="#planos">Internet</a><a href="#movel">Móvel</a><a href="#promocoes">Promoções</a><a href="#cliente">Sou cliente</a><a href="#empresas">Empresas</a></div><a class="btn b" href="#cep">Assine agora</a></nav>
 <header class="hero"><div class="bg" id="pbg"></div><div class="c w">
@@ -88,7 +97,7 @@ footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing
 <a class="hl" style="padding:22px" href="#movel"><div><h4 style="font-size:22px">Planos de Celular</h4><p>Para você e sua família</p></div><span class="go">→</span></a>
 <a class="hl" style="padding:22px" href="#cep"><div><h4 style="font-size:22px">Unifique Tudo</h4><p>Celular + Internet Fibra</p></div><span class="go">→</span></a>
 <a class="hl" style="padding:22px" href="#servicos"><div><h4 style="font-size:22px">Unifique Mais</h4><p>Conheça mais serviços</p></div><span class="go">→</span></a></div></div></div></div></section>
-<section id="planos" style="padding-top:0"><div class="w"><span class="lbl rv">(03) — Internet Fibra</span><h2 class="rv">Escolha a sua <span class="serif">velocidade.</span></h2>
+<section id="planos" class="lb"><div class="w"><span class="lbl rv">(03) — Internet Fibra</span><h2 class="rv">Escolha a sua <span class="serif">velocidade.</span></h2>
 <div class="plans">
 <div class="p rv"><div class="t"><span>Essencial</span></div><div class="sp">500<small> Mega</small></div><ul><li>Wi‑Fi 6 incluso</li><li>Instalação grátis</li><li>App Unifique</li></ul><div class="pr"><b>R$ 99,90<small>/mês</small></b><a class="btn o" href="#cep">Assinar</a></div></div>
 <div class="p f rv"><div class="t"><span>Ultra</span><em>Mais escolhido</em></div><div class="sp">1<small> Giga</small></div><ul><li>Wi‑Fi 6 Mesh</li><li>Streaming incluso</li><li>Suporte prioritário</li></ul><div class="pr"><b>R$ 129,90<small>/mês</small></b><a class="btn" href="#cep">Assinar</a></div></div>
@@ -97,7 +106,7 @@ footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing
 <section id="empresas" style="padding-top:0"><div class="w"><span class="lbl rv">(04) — Para quem</span><h2 class="rv">Feita para <span class="serif">cada</span> momento.</h2>
 <div class="cards"><a class="cd rv" href="#planos"><img src="img/5997178536.jpg" alt="Gamer"><div><h3>Casa & Games</h3><p>Latência baixa, streaming em 4K e Wi‑Fi em todos os cômodos.</p><span class="btn">Ver planos →</span></div></a>
 <a class="cd rv" href="#cep"><img src="img/5997181472.jpg" alt="Empresas"><div><h3>Empresas</h3><p>Link dedicado, data center, cloud e segurança para quem não pode parar.</p><span class="btn">Falar com especialista →</span></div></a></div></div></section>
-<section id="servicos" style="padding-top:0"><div class="w"><span class="lbl rv">(05) — Serviços</span><h2 class="rv">Tudo em <span class="serif">um só</span> lugar.</h2>
+<section id="servicos" class="lt"><div class="w"><span class="lbl rv">(05) — Serviços</span><h2 class="rv">Tudo em <span class="serif">um só</span> lugar.</h2>
 <div class="svc"><div class="s rv"><span class="n">01</span><h4>Internet Fibra</h4><p>Até 2 Giga com estabilidade de ponta a ponta.</p></div><div class="s rv"><span class="n">02</span><h4>Móvel 5G</h4><p>Planos flexíveis com GB que acumulam.</p></div><div class="s rv"><span class="n">03</span><h4>TV & Streaming</h4><p>Canais ao vivo e seus apps favoritos.</p></div><div class="s rv"><span class="n">04</span><h4>Telefonia</h4><p>Ligações ilimitadas para todo o Brasil.</p></div></div></div></section>
 <section id="promocoes" style="padding-top:0"><div class="w"><span class="lbl rv">(06) — Acontece na Unifique</span><h2 class="rv">Promoções & <span class="serif">vantagens.</span></h2>
 <div class="promo">
@@ -107,7 +116,7 @@ footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing
 <a class="pc ph rv" href="#" style="background-image:url(img/indique.jpg)"><div><span class="k">Já é cliente? · Tempo limitado</span><h3>Indique e ganhe mensalidades grátis</h3><p>Indique a Unifique para amigos e família e ganhe mensalidades sem pagar nada.</p></div><span class="btn arr">Saiba como indicar →</span></a>
 </div>
 <div class="box rv" style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px"><div><span class="k" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cy)">Mapa de cobertura</span><h3 style="margin-top:12px">Cobertura Rede Móvel</h3><p style="margin-bottom:0">Veja a cobertura da nossa rede móvel e descubra onde você já pode contar com o 5G da Unifique.</p></div><a class="btn b" href="#">Ver mapa de cobertura →</a></div></div></section>
-<section id="cliente" style="padding-top:0"><div class="w"><span class="lbl rv">(07) — Para clientes</span><h2 class="rv">Resolva de maneira <span class="serif">fácil e rápida.</span></h2>
+<section id="cliente" class="lb"><div class="w"><span class="lbl rv">(07) — Para clientes</span><h2 class="rv">Resolva de maneira <span class="serif">fácil e rápida.</span></h2>
 <div class="self">
 <a class="sc rv" href="#"><div class="ic">🧾</div><h4>Minha fatura</h4><p>Mais facilidade para acessar a sua fatura.</p></a>
 <a class="sc rv" href="#"><div class="ic">📱</div><h4>App Minha Unifique</h4><p>Baixe agora mesmo.</p></a>
@@ -119,7 +128,7 @@ footer{padding:80px 0 40px}.fbig{font-size:clamp(80px,19vw,300px);letter-spacing
 <a class="hl" href="#"><div><h4>Via Telegram</h4><p>Converse conosco e resolva tudo no aplicativo</p></div><span class="go">→</span></a>
 <a class="hl" href="#"><div><h4>Ligar agora</h4><p>Assine com um de nossos especialistas</p></div><span class="go">→</span></a>
 <a class="hl" href="#"><div><h4>Encontrar loja</h4><p>Visite a loja Unifique mais perto de você</p></div><span class="go">→</span></a></div></div></section>
-<section id="cep" style="padding-top:0"><div class="w"><div class="cta rv"><div class="bg"></div><span class="lbl">Estamos aqui para ajudar você</span><h2>Pronto para<br><span class="serif">acelerar?</span></h2><p style="color:#c4cbd8;margin:-16px auto 32px;max-width:440px">Consulte a disponibilidade no seu endereço ou encontre a loja Unifique mais próxima.</p>
+<section id="cep" class="lt"><div class="w"><div class="cta rv"><div class="bg"></div><span class="lbl">Estamos aqui para ajudar você</span><h2>Pronto para<br><span class="serif">acelerar?</span></h2><p style="color:#c4cbd8;margin:-16px auto 32px;max-width:440px">Consulte a disponibilidade no seu endereço ou encontre a loja Unifique mais próxima.</p>
 <form class="cep" onsubmit="event.preventDefault();this.querySelector('button').textContent='Disponível ✓'"><input placeholder="Digite seu CEP" aria-label="CEP"><button class="btn" style="border:0;cursor:pointer;background:var(--y)">Consultar</button></form></div></div></section>
 <footer><div class="w"><div class="fcols">
 <div><b>Para você</b><a href="#">Internet Fibra</a><a href="#">Planos de Celular</a><a href="#">Combos</a><a href="#">Unifique Mais</a></div>
